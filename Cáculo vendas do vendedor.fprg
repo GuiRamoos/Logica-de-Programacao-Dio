@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="guimo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-03 02:54:15 PM"/>
+        <attribute name="created" value="Z3VpbW87REVTS1RPUC1VTTFJTlBWOzIwMjMtMDUtMDM7MDI6NDU6MzIgUE07MjkzMQ=="/>
+        <attribute name="edited" value="Z3VpbW87REVTS1RPUC1VTTFJTlBWOzIwMjMtMDUtMDM7MDI6NTQ6MTUgUE07MTszMDQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Janeiro" type="Real" array="False" size=""/>
+            <declare name="Fevereiro" type="Real" array="False" size=""/>
+            <declare name="Mar&#231;o" type="Real" array="False" size=""/>
+            <declare name="Abril" type="Real" array="False" size=""/>
+            <declare name="media" type="Real" array="False" size=""/>
+            <input variable="Janeiro"/>
+            <input variable="Fevereiro"/>
+            <input variable="Mar&#231;o"/>
+            <input variable="Abril"/>
+            <assign variable="media" expression="(Janeiro+Fevereiro+Mar&#231;o+Abril)"/>
+            <if expression="media&gt;=5000">
+                <then>
+                    <output expression="&quot;Parab&#233;ns, voc&#234; receber&#225; um abono de 10%&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Voc&#234; recebeer&#225; um abono de 3%&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
